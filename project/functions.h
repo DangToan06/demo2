@@ -1,0 +1,38 @@
+#include "datatypes.h"
+
+void menu();
+void Admin();
+void End();
+void MenuAdmin();
+void MenuCustomerManagement();
+void AddBook(Book book[],int *n);
+void DeleteBook(Book book[], int *n,int countStart);
+void EditBook(Book book[], int n);
+void SearchBook(Book book[], int n);
+void saveBookToFile(Book *book, int n,int *countStart);
+void showAllBookFile(Book book[], int n,int countStart);
+void checkInput(int *n);
+void checkInputFloat(double *n);
+void checkInputPublication(int *day,int *month,int *years);
+int checkInputCharater(char *string, char charater);
+void Delete(Book book[], int *n, char positionDelele[],int countStart);
+void MenuSorting(Book book[], int n);
+void UpSort(Book book[], int n);
+void DownSort(Book book[], int n);
+void saveSortBook(Book book[], int n);
+void lowercaseSwap(char nameBook[], int n);
+void uppercaseFirstLetter(char nameBook[]);
+void InformationCannotBeLeftBlank(char str[],int length,Book book[], int n);
+void AddCustomer(Member member[],int *n);
+void ShowAllInformationCustomer(Member member[], int n,int countStart);
+void SaveInfomationToFile(Member member[], int n);
+void EditInformationCustomer(Member member[], int n);
+void SearchCustomer(Member member[], int n);
+int countIdCustomer();
+void sortIdBook(Book book[], int n);
+int checkNameBook(Book books[], int bookCount, const char *title);
+void deleteBufferMemory();
+void checkInputInformationCustomer(char str[], int length,Member member[], int n);
+void checkInputId(char id[], int length,Book book[], int n);
+int LoadBookFromFile(int *n,Book book[]);
+int checkBookId(Book book[], int bookCount, const char *id) ;
